@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Open+Sans:wght@400;600&family=Poppins:wght@500&display=swap");
 
 /* Common style or utilities*/
+* {
+  margin: 0;
+}
 body {
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
@@ -20,6 +23,45 @@ main {
 hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 30px;
+}
+/* header start from here */
+.header {
+  background-color: #562eff;
+  width: 1440px;
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-left: 285px;
+}
+.logo img {
+  width: 40.42px;
+  height: 51px;
+}
+.logo-title:hover {
+  color: #ffc014;
+}
+.logo-title {
+  width: 54px;
+  height: 36px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-column-gap: 36px;
+  padding-right: 289px;
+}
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
 }
 /* TOp Player Style */
 .top-players {
